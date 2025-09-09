@@ -5,8 +5,8 @@ import Testimonial from '../components/Testimonial';
 import services from '../data/services';
 import projects from '../data/projects';
 import testimonials from '../data/testimonials';
-import Container from '../components/ui/Container';
-import Section from '../components/ui/Section';
+import Container from '../ui/Container';
+import Section from '../ui/Section';
 
 export default function Home() {
   return (

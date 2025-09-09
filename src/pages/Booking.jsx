@@ -1,6 +1,7 @@
-import Container from '../components/ui/Container';
-import Section from '../components/ui/Section';
-import Button from '../components/ui/Button';
+import { Button } from "../ui/Button";
+import Container from "../ui/Container";
+import Section from "../ui/Section";
+
 
 export default function Booking() {
   return (

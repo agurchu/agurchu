@@ -24,7 +24,7 @@ return (
  <header className="sticky top-0 z-50 bg-primary-1/95 backdrop-blur-sm border-b border-secondary-2/20">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         
-        <img src={logo} alt="Agurchu Media Logo" className="h-12" />
+        <img src={logo} alt="Agurchu Media Logo" className="h-9" />
         <nav className="hidden md:flex space-x-6">
           {navLinks.map((link) => (
             <NavLink

@@ -1,5 +1,6 @@
-import { Button } from "./components/ui/button";
+
 import { Camera } from "lucide-react";
+import { Button } from "../ui/Button";
 
 export default function Hero() {
   return (
