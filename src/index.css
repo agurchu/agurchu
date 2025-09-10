@@ -17,3 +17,22 @@ html, body, #root { height: 100%; }
 .btn-primary { @apply bg-primary-2 text-secondary-2; }
 .btn-ghost { @apply bg-white/0 text-secondary-2 hover:bg-white/5; }
 .section { @apply container-pad py-16 md:py-24; }
+
+/* Slick carousel custom styles */
+.slick-dots {
+  @apply mt-4;
+}
+.slick-dots li button:before {
+  @apply text-secondary-2 text-2xl;
+}
+.slick-dots li.slick-active button:before {
+  @apply text-secondary-1;
+}
+.slick-prev,
+.slick-next {
+  @apply text-secondary-1 w-8 h-8;
+}
+.slick-prev:before,
+.slick-next:before {
+  @apply text-secondary-1 text-2xl;
+}

@@ -27,8 +27,8 @@ export function Button({ as = 'button', className, variant = 'solid', children, 
    const Component = as === 'NavLink' ? NavLink : as;
   const baseStyles = 'px-6 py-3 rounded-lg font-semibold transition-all';
   const variants = {
-    solid: 'bg-secondary-1 text-primary-1 hover:bg-secondary-1/80',
-    outline: 'border border-secondary-1 text-secondary-1 hover:bg-secondary-1 hover:text-primary-1',
+    solid: 'bg-secondary-2 text-primary-1 hover:bg-secondary-2/75',
+    outline: 'border border-secondary-2 text-secondary-2 hover:bg-secondary-2 hover:text-primary-1',
   };
 
   return (
