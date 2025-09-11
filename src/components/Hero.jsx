@@ -1,7 +1,7 @@
 
 import { Camera } from "lucide-react";
 import { Button } from "../ui/Button";
-import bg from "../assets/agurchu_img2.jpg"
+import bg from "../assets/agurchu_img7.jpg"
 import Carousel from "./Carousel";
 
 

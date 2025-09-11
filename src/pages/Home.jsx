@@ -7,6 +7,7 @@ import projects from '../data/projects';
 import testimonials from '../data/testimonials';
 import Container from '../ui/Container';
 import Section from '../ui/Section';
+import bg from "../assets/agurchu_img6.jpg"
 
 export default function Home() {
   return (
@@ -22,7 +23,11 @@ export default function Home() {
           </div>
         </Container>
       </Section>
-      <Section className="bg-primary-2">
+      <Section className="relative z-0 bg-secondary-2 ">
+        <div className='absolute top-0 bottom-0 left-0 right-0 -z-10 opacity-75 overflow-hidden'>
+        <img src={bg} alt="" className='object-cover w-full h-full blur-sm ' />
+
+        </div>
         <Container>
           <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
           <div className="grid md:grid-cols-2 gap-8">
