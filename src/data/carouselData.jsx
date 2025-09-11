@@ -8,7 +8,7 @@ export default [
     type: 'reel',
     title: 'Latest Music Reel',
     description: 'Check out our newest music production reel on YouTube.',
-    mediaUrl: 'https://www.youtube.com/embed/EC9LpULdC3Q?si=ViQkeeFMpkYdAl2i',
+    mediaUrl: <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EC9LpULdC3Q?si=8FMs5jpQQ4mPpXW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
   },
   {
     id: 2,

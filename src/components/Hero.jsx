@@ -30,7 +30,7 @@ export default function Hero() {
              <Camera className="w-12 h-12 mx-auto text-secondary-1 mt-4 mb-20 md:mb-44 sm:mb-20" />
       </div>
 
-      <div className="absolute bottom-0 shadow-lg left-10 right-10 sm:left-32 sm:right-32 ">
+      <div className="absolute -bottom-10 md:-bottom-20 shadow-lg left-10 right-10 sm:left-32 sm:right-32 ">
         <Carousel/>
         {/* <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EC9LpULdC3Q?si=ViQkeeFMpkYdAl2i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
       </div>

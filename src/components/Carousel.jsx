@@ -3,13 +3,14 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ReactPlayer from 'react-player';
-import carouselItems from '../data/carousel';
+import carouselItems from '../data/carouselData';
 import cn from '../lib/cn';
 import { Button } from '../ui/Button';
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Carousel() {
-      const [error, setError] = useState(null);
+     
   const settings = {
     dots: true,
     infinite: true,
@@ -24,57 +25,45 @@ function Carousel() {
   };
 
   return (
-    <div className="container mx-auto px-4 h-full w-full"  role="region" aria-label="Media carousel">
-      <div className="bg-primary-2 rounded-lg shadow-lg overflow-hidden">
+    <div className="container mx-auto px-4 w-full z-0"  role="region" aria-label="Media carousel">
+      <div className=" z-0 md:h-72 h-60 rounded-lg shadow-lg ">
         <Slider {...settings}>
           {carouselItems.map((item) => (
-            <div key={item.id} className="px-4">
+            <div key={item.id} className="px-4 h-full z-0 relative rounded-lg">
+               
               <div
                 className={cn(
-                  'text-center p-6 h-[450px] flex flex-col justify-between'
+                  'text-center items-center h-full flex flex-col justify-between'
                 )}
               >
-                {item.type === 'reel' ? (
-                  <div className="relative w-full h-64">
-                    <ReactPlayer
-                      url={item.mediaUrl} // Handles YouTube URLs
-                      light={true} // Use provided thumbnail or YouTube default
-                      playing={true} // Autoplay disabled for better UX
-                      muted
-                      loop
-                      width="100%"
-                      height="100%"
-                      className="rounded-lg"
-                      config={{
-                        youtube: {
-                          playerVars: { showinfo: 0, controls: 1,rel: 0, },
-                        },
-                      }}
-                       onError={(e) =>
-                          setError({ id: item.id, message: 'Video unavailable' })
-                        }
-                    />
-                  </div>
-                ) : (
-                  <img
-                    src={item.mediaUrl}
-                    alt={item.title}
-                    className="w-full h-64 object-cover rounded-lg"
-                  />
-                )}
-                <div className="mt-4">
-                  <h3 className="text-xl font-semibold text-accent">{item.title}</h3>
-                  <p className="text-secondary-2 mt-2">{item.description}</p>
-                </div>
+                
+                <Link className='bottom-0 top-0 left-0 right-0 absolute'>
+                {item.type === "reel" ?
+                 (
+                        item.mediaUrl    
+                ):  ( 
+
+                        <img
+                          src={item.mediaUrl}
+                          alt={item.title}
+                          className="w-full h-full -z-10 object-cover rounded-lg"
+                        />
+                    )
+          }</Link>
+               
                 <Button
                   as="NavLink"
                   to={item.type === 'special' ? '/booking' : '/portfolio'}
                   variant="outline"
-                  className="mt-4"
+                  className="my-4 z-0 bg-primary-1"
                 >
                   {item.type === 'special' ? 'Book Now' : 'View More'}
                 </Button>
               </div>
+              <div className="mt-4 z-10 translate-y-20">
+                  <h3 className="text-xl font-semibold text-primary-1">{item.title}</h3>
+                  <p className="text-primary-1 mt-2">{item.description}</p>
+                </div>
             </div>
           ))}
         </Slider>
