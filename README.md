@@ -1,11 +1,11 @@
-# 👋 Hi, I'm Katlego Mtimane
+# 👋 Hi, I'm Katlego Jim Mtimane
 
 **Software Engineer | Java Backend Developer | Cloud & Web Enthusiast**
 
 I am a passionate software developer from South Africa currently studying at **WeThinkCode_**.  
 I enjoy building reliable systems, solving real-world problems, and continuously improving my engineering skills.
 
-My journey into tech started from curiosity about **computers, design, and music production**, and evolved into a deep interest in **software engineering, backend development, and system integration**.
+My journey into tech started from curiosity about **computers, design, and music production**, and evolved into a deep interest in **software engineering, backend development, and system integration**. Coding since 2022.
 
 ---
 
@@ -30,6 +30,7 @@ My journey into tech started from curiosity about **computers, design, and music
 - **CSS**
 
 ### Frameworks & Technologies
+- **Springboot**
 - **React**
 - **Redux**
 - **Node.js**
@@ -96,7 +97,7 @@ A full-stack e-commerce platform allowing users to browse products, authenticate
 
 📧 **Email:** katlegoj.dev@gmail.com  
 
-💼 **LinkedIn:** *(Add your LinkedIn link)*  
+💼 **LinkedIn:** *https://www.linkedin.com/in/katlegojdev/*  
 
 🌐 **Portfolio:** *(Add your portfolio link)*  
 
