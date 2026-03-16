@@ -99,7 +99,7 @@ A full-stack e-commerce platform allowing users to browse products, authenticate
 
 💼 **LinkedIn:** *https://www.linkedin.com/in/katlegojdev/*  
 
-🌐 **Portfolio:** *(Add your portfolio link)*  
+🌐 **Portfolio:** *https://cerulean-maamoul-3acb1f.netlify.app/*  
 
 ---
 
